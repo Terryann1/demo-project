@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import { useMovies } from '../context/MovieContext';
+import { useMovies } from '../../../context/MovieContext';
 
 export default function AddMoviePage() {
   const router = useRouter();
