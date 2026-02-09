@@ -34,11 +34,11 @@ export default function AddMoviePage() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h1 className="text-4xl font-bold text-gray-800 mb-8">Add New Movie</h1>
+      <h1 className="text-4xl font-bold ">Add New Movie</h1>
       
       <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8">
         <div className="mb-6">
-          <label htmlFor="title" className="block text-gray-700 font-semibold mb-2">
+          <label htmlFor="title" className="block text-black font-semibold mb-2">
             Title *
           </label>
           <input
@@ -48,7 +48,7 @@ export default function AddMoviePage() {
             value={formData.title}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
           />
         </div>
 
@@ -63,13 +63,13 @@ export default function AddMoviePage() {
             value={formData.director}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
           />
         </div>
 
         <div className="grid grid-cols-2 gap-6 mb-6">
           <div>
-            <label htmlFor="year" className="block text-gray-700 font-semibold mb-2">
+            <label htmlFor="year" className="block text-black font-semibold mb-2">
               Year *
             </label>
             <input
@@ -81,12 +81,12 @@ export default function AddMoviePage() {
               required
               min="1900"
               max={new Date().getFullYear() + 5}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
             />
           </div>
 
           <div>
-            <label htmlFor="genre" className="block text-gray-700 font-semibold mb-2">
+            <label htmlFor="genre" className="block text-black font-semibold mb-2">
               Genre *
             </label>
             <select
@@ -95,7 +95,7 @@ export default function AddMoviePage() {
               value={formData.genre}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
             >
               <option value="">Select Genre</option>
               <option value="Action">Action</option>
@@ -112,7 +112,7 @@ export default function AddMoviePage() {
         </div>
 
         <div className="mb-6">
-          <label htmlFor="rating" className="block text-gray-700 font-semibold mb-2">
+          <label htmlFor="rating" className="block text-black font-semibold mb-2">
             Rating: {formData.rating}/10
           </label>
           <input
@@ -129,7 +129,7 @@ export default function AddMoviePage() {
         </div>
 
         <div className="mb-6">
-          <label htmlFor="poster" className="block text-gray-700 font-semibold mb-2">
+          <label htmlFor="poster" className="block text-black font-semibold mb-2">
             Poster URL *
           </label>
           <input
@@ -140,7 +140,7 @@ export default function AddMoviePage() {
             onChange={handleChange}
             required
             placeholder="https://example.com/poster.jpg"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black placeholder-gray-400"
           />
         </div>
 
@@ -155,7 +155,7 @@ export default function AddMoviePage() {
             onChange={handleChange}
             required
             rows={4}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
           />
         </div>
 
