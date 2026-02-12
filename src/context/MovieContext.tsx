@@ -27,7 +27,7 @@ export function MovieProvider({ children }: { children: ReactNode }) {
       ...movie,
       id: Date.now().toString(),
     };
-    setMovies([...movies, newMovie]);
+    setMovies([newMovie, ...movies]);
   };
 
   const updateMovie = (id: string, updatedMovie: Omit<Movie, 'id'>) => {

@@ -21,7 +21,7 @@ export default function AddMoviePage() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     addMovie(formData);
-    router.push('/');
+    //router.push('/');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

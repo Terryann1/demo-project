@@ -4,6 +4,7 @@ import { useState, useEffect, FormEvent } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { useMovies } from '@/context/MovieContext';
 import Image from 'next/image';
+import SearchBar from '@/components/SearchBar';
 
 export default function MovieDetailsPage() {
   const router = useRouter();
